@@ -32,8 +32,3 @@ feature -> develop -> master
 
 ## License
 Copyright © January 07, 2025 Konstantin Stolyarenko. All rights reserved.
-
-### Attribution
-If you use this project in your application, documentation, or any other work, you **must**:
-1. Credit the author: Konstantin Stolyarenko.
-2. Provide a link to the original repository: [FluidButton](https://github.com/stolyarenkoks/FluidButton).
