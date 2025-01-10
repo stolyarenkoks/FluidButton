@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 // MARK: - DemoView
 
@@ -55,6 +56,7 @@ struct DemoView: View {
                         isLightEnabled.toggle()
                         isHintVisible = false
                         print("Fluid Button Fully Pressed")
+                        performFeedback(type: .success)
                     }
                 )
                 .frame(height: 50)
@@ -75,6 +77,13 @@ struct DemoView: View {
             .padding(.horizontal, 40)
         }
         .ignoresSafeArea()
+    }
+
+    // MARK: - Private Methods
+
+    private func performFeedback(type: UINotificationFeedbackGenerator.FeedbackType) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(type)
     }
 }
 
